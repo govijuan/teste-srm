@@ -1,0 +1,48 @@
+.srm-navbar-top{
+    font-size: 1.5rem!important;
+    .row{
+        width: 100%;
+    }
+}
+.top-search-form-wrap{   
+    input{
+        border: none;
+        background-color: transparent;
+        text-align: right;
+        padding-right: 45px;
+        font-size: 1.2rem;
+        width: calc(100% - 47px);
+    }
+}
+.left-320-w{
+    width: 320px;
+    .top-search-form-wrap{
+        margin: 19px 0;
+    }
+}
+.right-full-320{
+    width: calc(100% - 320px);
+    padding: 0 30px;
+}
+.top-search-btn{
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    position: relative;
+    left: -40px;
+    margin-left: 0;
+    z-index: 100;
+}
+.srm-brand{
+    img{
+        display: block;
+        height: 60px;
+        width:auto;
+    }
+}
+
+.g-e-dropdown-menu-link{
+    &:after{
+        display: none;
+    }
+}

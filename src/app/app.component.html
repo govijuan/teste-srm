@@ -1,4 +1,4 @@
-<!--The content below is only a placeholder and can be replaced.-->
+<!--The content below is only a placeholder and can be replaced.
 <div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
@@ -16,5 +16,54 @@
   <li>
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
   </li>
-</ul>
+</ul>   Só de amostra para aprender mais fácil como fazer as coisas -->
+
+  <header>
+    <nav class="navbar navbar-light navbar-expand-lg srm-navbar-top">
+      <div class="row">
+        <div class="left-320-w">
+          <form class="form-inline top-search-form-wrap waves-light" mdbWavesEffect>
+            <a href="#"></a>
+            <input class="form-control mr-sm-2" type="search" placeholder="Pesquise Aqui" aria-label="Pesquise Aqui">
+            <button class="top-search-btn" type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+        <div class="right-full-320 navbar-right">
+          <div class="row">
+            <div class="col-md-3 brand-col">
+              <a class="navbar-brand srm-brand" href="#">
+                <img [src]="'../assets/img/logo-srm.jpg'">
+              </a>
+            </div>
+            <div class="col-md-5 g-e-col">
+              
+              <ul class="nav navbar-nav nav-flex-icons ml-auto">
+                <li class="nav-item">
+                  <span>Grupo Económico:</span>
+                </li>
+                <li class="nav-item dropdown btn-group" dropdown>
+                  <a dropdownToggle type="button" id="g-e-dropdown-menu-link" 
+                        href="#" class="nav-link dropdown-toggle g-e-dropdown-menu-link" 
+                        data-toggle="dropdown"
+                        aria-haspopup="true" 
+                        aria-expanded="false">
+                        Visão Agendada1<span class="fa fa-angle-double-down"></span>
+                  </a>
+                  <div class="g-e-dropdown-menu dropdown-menu dropdown dropdown-primary" *dropdownMenu  role="menu">
+                    <a href="#" class="dropdown-item waves-light">Visão Agendada1</a>
+                    <a href="#" class="dropdown-item waves-light">Outro Grupo 1</a>
+                    <a href="#" class="dropdown-item waves-light">Outro Grupo 2</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4 user-info-col">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
 
