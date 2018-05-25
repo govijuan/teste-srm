@@ -142,7 +142,7 @@ a.user-info-wrap{
     padding: 9px 15px;
     width: calc(100% - 80px);
     float: left;
-    .fa-user{
+    .fa-user-o{
         margin-right: 15px;
     }
     .fa-angle-double-down{
@@ -211,4 +211,39 @@ ul.srm-sidebar{
     height: 45px;
     width: auto;
     margin-right: 15px;
+}
+
+/* =========================
+   *** Estilos do Painel ***
+   ========================= */
+
+
+.painel-container{
+    @media(min-width: 992px){
+        padding-left: 350px;
+        height: 100%;
+        display: block;
+    };
+    padding: 25px 30px 30px;
+    .breadcrumb{
+        margin-bottom: 0;
+        padding-top: 0;
+        font-size: 1.2rem;
+        li{
+            a{
+                padding: 0 15px;
+                color: $f-cinza-clara;
+                &:hover, &:active{
+                   color: $azul-claro;
+                }
+            }
+            &:last-child{
+                &:before{
+                    font: normal normal normal 14px/1 FontAwesome;
+                    content:'\f054';
+                    color: $f-cinza-clara;
+                }
+            }
+        }
+    }
 }
