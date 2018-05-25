@@ -3,9 +3,12 @@
    ======================== */
 
 $azul-claro: #2fa0d0;
+$cinza-mais-claro: #dfdfdf;
 $f-cinza-clara: #8e8e8f;
+$f-cinza-media: #505050;
 $azul-escuro: #00243b;
 $cinza-body: #ebebeb;
+$box-shadow-geral: 0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15);
 
 
 h1{
@@ -13,7 +16,7 @@ h1{
 }
 
 .btn-srm{
-    border: 1px solid $azul-claro;
+    border: 2px solid $azul-claro;
     background-color: transparent;
     border-radius: 0;
     color: $f-cinza-clara;
@@ -38,7 +41,7 @@ h1{
         &:hover, &:focus{
             background-color: $azul-claro;
             color: white!important;
-            box-shadow: 0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15);
+            box-shadow: $box-shadow-geral;
         }
     }
 }
@@ -239,9 +242,10 @@ ul.srm-sidebar{
 
 
 .painel-container{
+    height: calc(100vh - 95px);
     @media(min-width: 992px){
         padding-left: 350px;
-        height: 100%;
+        //height: 100%;
         display: block;
     };
     padding: 25px 30px 30px;
@@ -306,5 +310,98 @@ ul.srm-sidebar{
                 padding: 0.5rem;
             }
         }
+    }
+}
+.panel-cards-row{
+    margin-top: 4rem;
+    .alertas-col{
+        .row{
+            @media(min-width: 768px){
+                height: 100%;
+            }
+        }
+    }
+}
+.srm-card{
+    background-color: #fff;
+    margin: 0 1.2rem;
+    box-shadow: $box-shadow-geral;
+    width: 100%;
+    .srm-card-body{
+        padding: 0 2rem 2rem;
+    }
+    .card-title-wrap{
+        padding: 3rem 2rem;
+        border-bottom: 1px solid $cinza-mais-claro;
+    }
+    .srm-card-title{
+        color: $f-cinza-media;
+    }
+    .alert-card-title{
+        color: $azul-claro;
+    }
+    .btn-srm{
+        padding: 0.8rem 1.2rem;
+        margin: 0.5rem 0;
+        width: 100%;
+    }
+    .atalhos-operacional-wrap, .atalhos-geral-wrap{
+        padding-top: 2rem;
+    }
+    .atalhos-geral-wrap{
+        @media(min-width: 768px){
+            border-left: 1px solid $cinza-mais-claro;
+            padding-left: 2rem;
+        }
+    }
+    .atalhos-operacional-wrap{
+        @media(min-width: 768px){
+            padding-right: 2rem;
+        }
+    }
+    .nova-op-wrap{
+        @media(min-width: 768px){
+            padding-right: 1.5rem;
+        }
+    }
+    h4{
+        font-size: 1.2rem;
+    }
+    .card-alertas-ul{
+        list-style: none;
+        padding: 0;
+    }
+    .btn-acoes{
+        width: 160px;
+        display: block;
+        float: right;
+        position: relative;
+        i{
+            position: absolute;
+            right: 0.5rem;
+            color: $azul-claro;
+            top: 1.1rem;
+        }
+        
+    }
+    .card-aleta-li{
+        line-height: 72.9px;
+    }
+    
+}
+.acoes-dropdown{
+    position: relative;
+    .dropdown-menu{
+        @media(min-width: 768px){
+            width: 150px;
+            //right: 0.9rem;
+            left:calc(100% - 175px);
+
+        }
+    }
+}
+.atalhos-card{
+    @media(max-width: 1199px){
+        margin-top: 2rem;
     }
 }

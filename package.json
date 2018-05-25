@@ -1,6 +1,8 @@
 {
   "name": "teste-srm",
   "version": "0.0.0",
+  "author": "Juan Carlos Coral",
+  "description": "Teste de desenvolvimento de Layout para a SRM",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
