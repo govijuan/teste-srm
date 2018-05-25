@@ -1,10 +1,55 @@
-.srm-navbar-top{
-    font-size: 1.5rem!important;
-    .row{
-        width: 100%;
+/* ========================
+    *** Definindo cores ***
+   ======================== */
+
+$azul-claro: #2fa0d0;
+$f-cinza-clara: #8e8e8f;
+$azul-escuro: #00243b;
+$cinza-body: #ebebeb;
+
+.navbar{
+    .dropdown-menu{
+        border-radius: 0;
+        a{
+            color: $f-cinza-clara!important;
+            &:hover, &:focus{
+                background-color: $azul-claro;
+                color: white!important;
+                box-shadow: 0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15);
+            }
+        }
     }
 }
-.top-search-form-wrap{   
+
+.dropdown-toggle{
+    &:after{
+        font: normal normal normal 14px/1 FontAwesome;
+        display: none;
+    }
+}
+
+.srm-navbar-top{
+    font-size: 1.5rem!important;
+    box-shadow: none;
+    background-color: #fff;
+    padding: 0.5rem 2rem;
+    .dropdown{ 
+        .dropdown-menu{
+            top: 45px;
+            left: -6px;
+            padding: 0.5rem 0.4rem;
+            a{
+                font-size: 1.5rem!important;
+            }
+        }
+    }
+}
+.srm-navbar-top.navbar{
+    padding-right: 2rem!important;
+}
+.top-search-form-wrap{  
+    background-color: #fff;
+    border-right: 2px solid $cinza-body;
     input{
         border: none;
         background-color: transparent;
@@ -16,13 +61,22 @@
 }
 .left-320-w{
     width: 320px;
+    z-index: 999;
+    height: 100%;
+    height: -webkit-calc(100%+ 60px);
+    height: calc(100%+ 60px);
+    height: -moz-calc(100%);
+    top: 0;
+    margin: 0;
     .top-search-form-wrap{
-        margin: 19px 0;
+        padding: 28px 0;
     }
+    float: left;
 }
 .right-full-320{
     width: calc(100% - 320px);
-    padding: 0 30px;
+    padding: 0 15px;
+    float: left;
 }
 .top-search-btn{
     border: none;
@@ -32,6 +86,8 @@
     left: -40px;
     margin-left: 0;
     z-index: 100;
+    color: $f-cinza-clara;
+    font-size: 23px;
 }
 .srm-brand{
     img{
@@ -41,8 +97,118 @@
     }
 }
 
-.g-e-dropdown-menu-link{
-    &:after{
-        display: none;
+.navbar-light{
+    .navbar-nav{
+        .nav-link:hover{
+            .nav-link:focus{
+                color: $azul-claro;
+            }
+        }
+        .nav-link{
+            color: $f-cinza-clara;
+        }
     }
+}
+.nav-top-r-infos{
+    .g-e-label{
+        position: relative;
+        top: 9px;
+        line-height: 60px;
+    }
+    li{
+        margin: 0 10px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+    .g-e-dropdown-menu-link{
+        border: 2px solid $azul-claro;
+        padding: 8px 15px;
+        color: $f-cinza-clara;
+        line-height: 60px;
+        &:hover, &:active{
+            color: $azul-claro!important;
+        }
+        span{
+            color: $azul-claro;
+            margin: 0 0 0 0.5rem;
+        }
+    }
+}
+a.user-info-wrap{
+    background-color: $azul-escuro;
+    color: white;
+    line-height: 60px;
+    padding: 9px 15px;
+    width: calc(100% - 80px);
+    float: left;
+    .fa-user{
+        margin-right: 15px;
+    }
+    .fa-angle-double-down{
+        margin-left: 15px;
+        color: $azul-claro;
+    }
+    &:hover, &:active{
+        color: $azul-claro;
+    }
+}
+.user-alerts-wrap{
+    background-color: $azul-claro;
+    line-height: 60px;
+    padding: 9px 0;
+    width: 80px;
+    float: left;
+    a{
+        color: white;
+        display: inline-block;
+        position: relative;
+        .alert-length{
+            font-size: 1rem;
+            position: absolute;
+            top: -20px;
+            top: 9px;
+            left: 10px;
+            width: 25px;
+            height: 25px;
+            border-radius: 100%;
+            background-color: red;
+            display: block;
+            line-height: 25px;
+        }
+    }
+}
+
+ul.srm-sidebar{
+    list-style: none;
+    padding: 0;
+    height: 100%;
+    height: -webkit-calc(100%+ 60px);
+    height: calc(100%+ 60px);
+    height: -moz-calc(100%);
+    background-color: $azul-escuro;
+    color: #fff;
+    width: 320px;
+    display: block;
+    position: fixed;
+    z-index: 999;
+    font-size: 1.2rem;
+    font-weight: 100;
+    li{
+        border-bottom: 2px solid $azul-claro;
+        a{
+            color: #fff;
+            padding: 17px 15px 17px 30px;
+            display: block;
+            line-height: 45px;
+            &:hover, &:active{
+                color: $azul-claro;
+            }
+        }
+    }
+}
+.sidebar-nav-icon{
+    height: 45px;
+    width: auto;
+    margin-right: 15px;
 }
