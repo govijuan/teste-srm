@@ -7,20 +7,41 @@ $f-cinza-clara: #8e8e8f;
 $azul-escuro: #00243b;
 $cinza-body: #ebebeb;
 
-.navbar{
-    .dropdown-menu{
-        border-radius: 0;
-        a{
-            color: $f-cinza-clara!important;
-            &:hover, &:focus{
-                background-color: $azul-claro;
-                color: white!important;
-                box-shadow: 0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15);
-            }
+
+h1{
+    color: $azul-escuro;
+}
+
+.btn-srm{
+    border: 1px solid $azul-claro;
+    background-color: transparent;
+    border-radius: 0;
+    color: $f-cinza-clara;
+    box-shadow: none;
+    text-transform: none;
+    font-size: 1.2rem;
+    &:active{
+        box-shadow: none!important; 
+    }
+}
+.btn-g{
+    width: 250px;
+    font-size: 1.3rem;
+    padding: 1.39rem 1.2rem;
+}
+
+.dropdown-menu{
+    border-radius: 0;
+    padding: 0.5rem 0.4rem;
+    a{
+        color: $f-cinza-clara!important;
+        &:hover, &:focus{
+            background-color: $azul-claro;
+            color: white!important;
+            box-shadow: 0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15);
         }
     }
 }
-
 .dropdown-toggle{
     &:after{
         font: normal normal normal 14px/1 FontAwesome;
@@ -29,7 +50,7 @@ $cinza-body: #ebebeb;
 }
 
 .srm-navbar-top{
-    font-size: 1.5rem!important;
+    font-size: 1.3rem!important;
     box-shadow: none;
     background-color: #fff;
     padding: 0.5rem 2rem;
@@ -37,9 +58,8 @@ $cinza-body: #ebebeb;
         .dropdown-menu{
             top: 45px;
             left: -6px;
-            padding: 0.5rem 0.4rem;
             a{
-                font-size: 1.5rem!important;
+                font-size: 1.3rem!important;
             }
         }
     }
@@ -243,6 +263,47 @@ ul.srm-sidebar{
                     content:'\f054';
                     color: $f-cinza-clara;
                 }
+            }
+        }
+    }
+    .panel-title-row{
+        padding-top: 15px; 
+        h1.panel-title{
+            padding: 0 15px;
+            line-height: 60px;
+            display: flex;
+        }
+        .panel-title-icon{
+            height: 60px;
+            width: auto;
+            margin-right: 30px;
+            display: inline-block;
+        }
+    }
+    .title-product-col{
+        font-size: 1.3rem;
+        @media(min-width: 768px){
+            text-align: right;
+        }
+        .btn{
+            position: relative;
+            i{
+                font-size: 1.3rem;
+                color: $azul-claro;
+                position: absolute;
+                right: 1.2rem;
+                top: 1.7rem;
+            }
+        }
+        .title-product-label{
+            margin: 0 2rem 0 0;
+        }
+        .dropdown-menu{
+            text-align: center;
+            font-size: 1.3rem;
+            width: 250px;
+            .dropdown-item{
+                padding: 0.5rem;
             }
         }
     }
