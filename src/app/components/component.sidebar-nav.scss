@@ -5,7 +5,8 @@
    ======================================= */
 
 
-   ul.srm-sidebar{
+
+ul.srm-sidebar{
     list-style: none;
     padding: 0;
     height: 100%;
@@ -20,8 +21,8 @@
     z-index: 999;
     font-size: 1.2rem;
     font-weight: 100;
-    @media(min-width: 1200px) and (max-width: 1402px){
-        width: 280px!important;
+    @media(min-width: 992px) and (max-width: 1402px){
+        width: 270px!important;
     }
     li{
         border-bottom: 2px solid $azul-claro;

@@ -19,8 +19,8 @@
         padding-left: 350px;
         display: block;
     }
-    @media(min-width: 1200px) and (max-width: 1402px){
-        padding-left: 310px;
+    @media(min-width: 992px) and (max-width: 1402px){
+        padding-left: 300px;
     }
     padding: 25px 30px 30px;
     .breadcrumb{
@@ -193,5 +193,10 @@
 .atalhos-card{
     @media(max-width: 1199px){
         margin-top: 2rem;
+    }
+}
+.sidebar-content{
+    @media(max-width: 991px){
+        display:none;
     }
 }

@@ -66,6 +66,9 @@ body {
     top: 0;
     margin: 0;
     float: left;
+    @media(min-width: 992px) and (max-width: 1402px){
+        width: 270px;
+    }
 }
 .right-full-320{
     width: calc(100% - 320px);

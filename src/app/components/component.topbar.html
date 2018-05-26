@@ -7,46 +7,49 @@
         <button class="top-search-btn" type="submit"><i class="fa fa-search"></i></button>
       </form>
     </div>
-    <nav class="navbar navbar-light navbar-expand-lg srm-navbar-top">
-      <div class="float-left">
-        <a class="navbar-brand srm-brand" href="#">
-          <img [src]="'../assets/img/logo-srm.jpg'">
-        </a>
-      </div>
-      <ul class="nav navbar-nav nav-flex-icons ml-auto nav-top-r-infos">
-        <li class="nav-item">
-          <span class="g-e-label">Grupo Económico:</span>
-        </li>
-        <li class="nav-item dropdown btn-group" dropdown>
-          <a dropdownToggle type="button" id="g-e-dropdown-menu-link" 
-                href="#" class="nav-link dropdown-toggle g-e-dropdown-menu-link" 
-                data-toggle="dropdown"
-                aria-haspopup="true" 
-                aria-expanded="false" mdbWavesEffect>
-                Visão Agendada1<span class="fa fa-angle-double-down"></span>
-          </a>
-          <div class="g-e-dropdown-menu dropdown-menu dropdown dropdown-primary" *dropdownMenu  role="menu">
-            <a href="#" class="dropdown-item waves-light">Visão Agendada1</a>
-            <a href="#" class="dropdown-item waves-light">Outro Grupo 1</a>
-            <a href="#" class="dropdown-item waves-light">Outro Grupo 2</a>
-          </div>
-        </li>
-        <li class="nav-item">
-            <a class="user-info-wrap text-center">
-              <div class="user-info">
-                <i class="fa fa-user-o"></i>
-                <span class="user-name">Sandra Oliveira</span>
-                <i class="fa fa-angle-double-down"></i>
-              </div>
+    <nav SideClass="navbar navbar-light navbar-expand-md srm-navbar-top">
+      <a class="navbar-brand srm-brand" href="#">
+        <img [src]="'../assets/img/logo-srm.jpg'">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-activates="navbar-collapse-srm" aria-controls="navbar-collapse-srm" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-collapse-srm">
+        <ul class="nav navbar-nav nav-flex-icons ml-auto nav-top-r-infos">
+          <li class="nav-item">
+            <span class="g-e-label">Grupo Económico:</span>
+          </li>
+          <li class="nav-item dropdown btn-group" dropdown>
+            <a dropdownToggle type="button" id="g-e-dropdown-menu-link" 
+                  href="#" class="nav-link dropdown-toggle g-e-dropdown-menu-link" 
+                  data-toggle="dropdown"
+                  aria-haspopup="true" 
+                  aria-expanded="false" mdbWavesEffect>
+                  Visão Agendada1<span class="fa fa-angle-double-down"></span>
             </a>
-            <div class="user-alerts-wrap text-center">
-              <a href="#" class="u-alerts-link">
-                <i class="fa fa-bell-o"></i>
-                <span class="alert-length">3</span>
-              </a>
+            <div class="g-e-dropdown-menu dropdown-menu dropdown dropdown-primary" *dropdownMenu  role="menu">
+              <a href="#" class="dropdown-item waves-light">Visão Agendada1</a>
+              <a href="#" class="dropdown-item waves-light">Outro Grupo 1</a>
+              <a href="#" class="dropdown-item waves-light">Outro Grupo 2</a>
             </div>
-        </li>
-      </ul>     
+          </li>
+          <li class="nav-item">
+              <a class="user-info-wrap text-center">
+                <div class="user-info">
+                  <i class="fa fa-user-o"></i>
+                  <span class="user-name">Sandra Oliveira</span>
+                  <i class="fa fa-angle-double-down"></i>
+                </div>
+              </a>
+              <div class="user-alerts-wrap text-center">
+                <a href="#" class="u-alerts-link">
+                  <i class="fa fa-bell-o"></i>
+                  <span class="alert-length">3</span>
+                </a>
+              </div>
+          </li>
+        </ul>
+      </div>    
     </nav>
   </header>
   <!-- Termina barra do topo -->
