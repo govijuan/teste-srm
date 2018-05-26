@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+@import "app/app.component.variables.scss";
 body {
     background-color: #ebebeb;
     height: 100%;
@@ -6,4 +7,68 @@ body {
 }
 .clearfix{
     clear: both;
+}
+
+/* ============================
+   *** Estilos de Uso Geral ***
+   ============================ */
+
+   h1{
+    color: $azul-escuro;
+}
+
+.btn-srm{
+    border: 2px solid $azul-claro;
+    background-color: transparent;
+    border-radius: 0;
+    color: $f-cinza-clara;
+    box-shadow: none;
+    text-transform: none;
+    font-size: 1.2rem;
+    &:active{
+        box-shadow: none!important; 
+    }
+}
+.btn-g{
+    width: 250px;
+    font-size: 1.3rem;
+    padding: 1.39rem 1.2rem;
+    @media(min-width: 992px) and (max-width: 1199px){
+        width: 180px!important;
+    }
+}
+
+.dropdown-menu{
+    border-radius: 0;
+    padding: 0.5rem 0.4rem;
+    a{
+        color: $f-cinza-clara!important;
+        &:hover, &:focus{
+            background-color: $azul-claro;
+            color: white!important;
+            box-shadow: $box-shadow-geral;
+        }
+    }
+}
+.dropdown-toggle{
+    &:after{
+        display: none;
+    }
+}
+
+.left-320-w{
+    width: 320px;
+    z-index: 999;
+    height: 100%;
+    height: -webkit-calc(100%+ 60px);
+    height: calc(100%+ 60px);
+    height: -moz-calc(100%);
+    top: 0;
+    margin: 0;
+    float: left;
+}
+.right-full-320{
+    width: calc(100% - 320px);
+    padding: 0 15px;
+    float: left;
 }

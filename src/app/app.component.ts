@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { topBarComponent } from './components/component.topbar';
+import { SidebarNavComponent } from './components/component.sidebar-nav';
+
 
 @Component({
   selector: 'app-root',

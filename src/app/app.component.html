@@ -1,66 +1,7 @@
-<!-- Começa barra do topo -->
-  <header>
-    <div class="left-320-w">
-      <form class="form-inline top-search-form-wrap waves-light" mdbWavesEffect>
-        <a href="#"></a>
-        <input class="form-control mr-sm-2" type="search" placeholder="Pesquise Aqui" aria-label="Pesquise Aqui">
-        <button class="top-search-btn" type="submit"><i class="fa fa-search"></i></button>
-      </form>
-    </div>
-    <nav class="navbar navbar-light navbar-expand-lg srm-navbar-top">
-      <div class="float-left">
-        <a class="navbar-brand srm-brand" href="#">
-          <img [src]="'../assets/img/logo-srm.jpg'">
-        </a>
-      </div>
-      <ul class="nav navbar-nav nav-flex-icons ml-auto nav-top-r-infos">
-        <li class="nav-item">
-          <span class="g-e-label">Grupo Económico:</span>
-        </li>
-        <li class="nav-item dropdown btn-group" dropdown>
-          <a dropdownToggle type="button" id="g-e-dropdown-menu-link" 
-                href="#" class="nav-link dropdown-toggle g-e-dropdown-menu-link" 
-                data-toggle="dropdown"
-                aria-haspopup="true" 
-                aria-expanded="false" mdbWavesEffect>
-                Visão Agendada1<span class="fa fa-angle-double-down"></span>
-          </a>
-          <div class="g-e-dropdown-menu dropdown-menu dropdown dropdown-primary" *dropdownMenu  role="menu">
-            <a href="#" class="dropdown-item waves-light">Visão Agendada1</a>
-            <a href="#" class="dropdown-item waves-light">Outro Grupo 1</a>
-            <a href="#" class="dropdown-item waves-light">Outro Grupo 2</a>
-          </div>
-        </li>
-        <li class="nav-item">
-            <a class="user-info-wrap text-center">
-              <div class="user-info">
-                <i class="fa fa-user-o"></i>
-                <span class="user-name">Sandra Oliveira</span>
-                <i class="fa fa-angle-double-down"></i>
-              </div>
-            </a>
-            <div class="user-alerts-wrap text-center">
-              <a href="#" class="u-alerts-link">
-                <i class="fa fa-bell-o"></i>
-                <span class="alert-length">3</span>
-              </a>
-            </div>
-        </li>
-      </ul>     
-    </nav>
-  </header>
-  <!-- Termina barra do topo -->
-  <!--Começa conteúdo debaixo da barra do topo -->
+ <topbar class="topbar-content"></topbar>
+ <!--Começa conteúdo debaixo da barra do topo -->
   <div class="main">
-    <!-- Começa Navegação Lateral -->
-    <nav class="srm-sedebar-nav">
-      <ul class="nav nav-stacked fixed srm-sidebar" >
-        <li *ngFor="let sidebarLink of sidebarLinks">
-          <a href="#"><img class="sidebar-nav-icon" src="{{sidebarLink.iconUrl}}" alt="{sidebarLink.iconAltTxt}">{{sidebarLink.name}}</a>
-        </li>
-      </ul>
-    </nav>
-    <!-- Termina Navegação Lateral -->
+    <sidebar-nav [sidebarLinks] = "sidebarLinks" class="sidebar-content"></sidebar-nav>
     <!-- Começa contenedor do painel -->
     <section class="painel-container container-fluid">
       <div class="row breadcrums-row">

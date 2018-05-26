@@ -3,10 +3,12 @@ import { NgModule, NO_ERRORS_SCHEMA  } from '@angular/core';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { AppComponent } from './app.component';
+import { SidebarNavComponent } from './components/component.sidebar-nav';
+import { topBarComponent } from './components/component.topbar';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent, SidebarNavComponent, topBarComponent
   ],
   imports: [
     BrowserModule, MDBBootstrapModule.forRoot()

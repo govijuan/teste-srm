@@ -1,0 +1,9 @@
+<nav class="srm-sedebar-nav">
+  <a href="#" class="button-collapse"><i class="fa fa-bars menu"></i></a>
+    
+  <ul class="nav nav-stacked fixed srm-sidebar" >
+    <li *ngFor="let sidebarLink of sidebarLinks">
+      <a href="#"><img class="sidebar-nav-icon" src="{{sidebarLink.iconUrl}}" alt="{sidebarLink.iconAltTxt}">{{sidebarLink.name}}</a>
+    </li>
+  </ul>
+</nav>
