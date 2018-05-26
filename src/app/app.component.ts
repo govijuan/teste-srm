@@ -16,13 +16,13 @@ export class AppComponent {
     {name:"Ant. de Recebíveis", iconUrl: "../assets/bar-graph.svg", iconAltTxt: "icone de Gráfico de Barras"}
   ];
   acoesAlertaNotas = [
-    {name:"Ação 1", actionUrl: "#"}
-    {name:"Ação 2", actionUrl: "#"}
+    {name:"Ação 1", actionUrl: "#"},
+    {name:"Ação 2", actionUrl: "#"},
     {name:"Ação 3", actionUrl: "#"}
   ];
   acoesAlertaAssinaturas = [
-    {name:"Ação 1", actionUrl: "#"}
-    {name:"Ação 2", actionUrl: "#"}
+    {name:"Ação 1", actionUrl: "#"},
+    {name:"Ação 2", actionUrl: "#"},
     {name:"Ação 3", actionUrl: "#"}
   ]
 }
