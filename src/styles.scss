@@ -17,6 +17,14 @@ body {
     color: $azul-escuro;
 }
 
+.navbar{
+    .container{
+        @media(max-width: 991px){
+            max-width:calc(100% - 2rem)!important;
+        }
+    }
+}
+
 .btn-srm{
     border: 2px solid $azul-claro;
     background-color: transparent;
@@ -68,6 +76,9 @@ body {
     float: left;
     @media(min-width: 992px) and (max-width: 1402px){
         width: 270px;
+    }
+    @media(max-width: 991px){
+        display: none;
     }
 }
 .right-full-320{
