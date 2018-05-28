@@ -2,13 +2,12 @@
 <header>
   <div class="left-320-w">
     <form class="form-inline top-search-form-wrap waves-light" mdbWavesEffect>
-      <a href="#"></a>
       <input class="form-control mr-sm-2" type="search" placeholder="Pesquise Aqui" aria-label="Pesquise Aqui">
       <button class="top-search-btn" type="submit"><i class="fa fa-search"></i></button>
     </form>
   </div>
 
-  <mdb-navbar SideClass="navbar navbar-expand-lg navbar-light white srm-navbar-top">
+  <mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-light white srm-navbar-top">
       
         
       <!-- Navbar brand -->
@@ -22,11 +21,12 @@
       <links>
           <!-- Links -->
           <ul class="nav navbar-nav nav-flex-icons ml-auto nav-top-r-infos">
-            <li class="nav-item">
-              <span class="g-e-label">Grupo Económico:</span>
-            </li>
+            <!--<li class="nav-item">
+              
+            </li> -->
             <li class="nav-item dropdown btn-group" dropdown>
-              <a dropdownToggle type="button" id="g-e-dropdown-menu-link" 
+              <span class="g-e-label">Grupo Económico:</span>
+              <a dropdownToggle type="button" id="nav-link waves-light g-e-dropdown-menu-link" 
                     href="#" class="nav-link dropdown-toggle g-e-dropdown-menu-link" 
                     data-toggle="dropdown"
                     aria-haspopup="true" 
@@ -34,13 +34,13 @@
                     Visão Agendada1<span class="fa fa-angle-double-down"></span>
               </a>
               <div class="g-e-dropdown-menu dropdown-menu dropdown dropdown-primary" *dropdownMenu  role="menu">
-                <a routerLink="#" href="#" class="dropdown-item waves-light">Visão Agendada1</a>
-                <a routerLink="#" href="#" class="dropdown-item waves-light">Outro Grupo 1</a>
-                <a routerLink="#" href="#" class="dropdown-item waves-light">Outro Grupo 2</a>
+                <a routerLink="#" href="#" class="dropdown-item waves-light" mdbWavesEffect>Visão Agendada1</a>
+                <a routerLink="#" href="#" class="dropdown-item waves-light" mdbWavesEffect>Outro Grupo 1</a>
+                <a routerLink="#" href="#" class="dropdown-item waves-light" mdbWavesEffect>Outro Grupo 2</a>
               </div>
             </li>
             <li class="nav-item">
-                <a class="user-info-wrap text-center">
+                <a class="user-info-wrap">
                   <div class="user-info">
                     <i class="fa fa-user-o"></i>
                     <span class="user-name">Sandra Oliveira</span>
@@ -53,6 +53,16 @@
                     <span class="alert-length">3</span>
                   </a>
                 </div>
+            </li>
+            <li *ngFor="let topBarLink of topbarLinks" class="nav-item nav-i-mobile-only">
+              <a href="#" class="nav-link waves-light" mdbWavesEffect><img class="sidebar-nav-icon-m" src="{{topBarLink.iconUrl}}" alt="{{topBarLink.iconAltTxt}}">{{topBarLink.name}}</a>
+            </li>
+            <li class="nav-item m-searchform">
+                <form class="form-inline top-search-form-wrap" >
+                    <div class=" mt-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                    </div>
+                </form>
             </li>
           </ul>
           <!-- Links -->

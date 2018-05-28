@@ -1,5 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import "app/app.component.variables.scss";
+
+
+/* ============================
+   *** Estilos de Uso Geral ***
+   ============================ */
 body {
     background-color: #ebebeb;
     height: 100%;
@@ -9,22 +14,57 @@ body {
     clear: both;
 }
 
-/* ============================
-   *** Estilos de Uso Geral ***
-   ============================ */
-
-   h1{
+h1{
     color: $azul-escuro;
 }
 
 .navbar{
+    @media(max-width: 991px){
+        padding-bottom: 0;
+    }
     .container{
         @media(max-width: 991px){
             max-width:calc(100% - 2rem)!important;
         }
+        @media(min-width: 992px){
+            max-width: 100%!important;
+        }
     }
 }
-
+.srm-navbar-top{
+    background-color: #fff;
+    @media (min-width:992px){
+        padding: 0.5rem 2rem;
+        box-shadow: none!important;
+    }
+    @media (min-width:992px) and (max-width: 1402px){
+        width: calc(100% - 270px);
+        left: 270px;
+    }
+    @media (min-width:1403px) {
+        width: calc(100% - 320px);
+        left: 320px;
+    }
+}
+.navbar.navbar-light{
+    .navbar-toggler{
+        color: $azul-escuro;
+    }
+}
+.navbar-collapse{
+    @media(max-width: 991px){
+        margin: 0 -2.59rem;
+        background-color: $azul-escuro;
+    }
+    a{
+        
+    }
+    .g-e-label{
+        @media(max-width: 991px){
+            color: white;
+        }
+    }
+}
 .btn-srm{
     border: 2px solid $azul-claro;
     background-color: transparent;
@@ -74,6 +114,7 @@ body {
     top: 0;
     margin: 0;
     float: left;
+    position: fixed;
     @media(min-width: 992px) and (max-width: 1402px){
         width: 270px;
     }

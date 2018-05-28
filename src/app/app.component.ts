@@ -15,6 +15,7 @@ export class AppComponent {
     {name:"Conta Digital", iconUrl: "../assets/arroba.svg", iconAltTxt: "icone de arroba"},
     {name:"Ant. de Recebíveis", iconUrl: "../assets/bar-graph.svg", iconAltTxt: "icone de Gráfico de Barras"}
   ];
+  topbarLinks = this.sidebarLinks;
   acoesAlertaNotas = [
     {name:"Ação 1", actionUrl: "#"},
     {name:"Ação 2", actionUrl: "#"},
