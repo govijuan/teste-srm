@@ -34,13 +34,13 @@
                     Visão Agendada1<span class="fa fa-angle-double-down"></span>
               </a>
               <div class="g-e-dropdown-menu dropdown-menu dropdown dropdown-primary" *dropdownMenu  role="menu">
-                <a routerLink="#" href="#" class="dropdown-item waves-light" mdbWavesEffect>Visão Agendada1</a>
-                <a routerLink="#" href="#" class="dropdown-item waves-light" mdbWavesEffect>Outro Grupo 1</a>
-                <a routerLink="#" href="#" class="dropdown-item waves-light" mdbWavesEffect>Outro Grupo 2</a>
+                <a routerLink="/#" href="#" class="dropdown-item waves-light" mdbWavesEffect>Visão Agendada1</a>
+                <a routerLink="/#" href="#" class="dropdown-item waves-light" mdbWavesEffect>Outro Grupo 1</a>
+                <a routerLink="/#" href="#" class="dropdown-item waves-light" mdbWavesEffect>Outro Grupo 2</a>
               </div>
             </li>
             <li class="nav-item">
-                <a class="user-info-wrap">
+                <a routerLink="/#" class="user-info-wrap">
                   <div class="user-info">
                     <i class="fa fa-user-o"></i>
                     <span class="user-name">Sandra Oliveira</span>
@@ -48,14 +48,14 @@
                   </div>
                 </a>
                 <div class="user-alerts-wrap text-center">
-                  <a href="#" class="u-alerts-link">
+                  <a routerLink="/#" href="#" class="u-alerts-link">
                     <i class="fa fa-bell-o"></i>
                     <span class="alert-length">3</span>
                   </a>
                 </div>
             </li>
             <li *ngFor="let topBarLink of topbarLinks" class="nav-item nav-i-mobile-only">
-              <a href="#" class="nav-link waves-light" mdbWavesEffect><img class="sidebar-nav-icon-m" src="{{topBarLink.iconUrl}}" alt="{{topBarLink.iconAltTxt}}">{{topBarLink.name}}</a>
+              <a routerLink="/#" href="#" class="nav-link waves-light" mdbWavesEffect><img class="sidebar-nav-icon-m" src="{{topBarLink.iconUrl}}" alt="{{topBarLink.iconAltTxt}}">{{topBarLink.name}}</a>
             </li>
             <li class="nav-item m-searchform">
                 <form class="form-inline top-search-form-wrap" >
